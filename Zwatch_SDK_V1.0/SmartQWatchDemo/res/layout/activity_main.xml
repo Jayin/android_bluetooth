@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/data_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:text="@string/start_data"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/record_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/data_bt"
+        android:tag="start"
+        android:text="@string/start_record"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/infos_watch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record_bt"
+        android:textColor="#777777" />
+
+</RelativeLayout>
